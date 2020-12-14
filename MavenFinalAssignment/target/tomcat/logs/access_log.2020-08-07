@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [07/Aug/2020:17:25:06 +0200] "GET / HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [07/Aug/2020:17:25:18 +0200] "GET /MavenFinalAssignment HTTP/1.1" 302 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [07/Aug/2020:17:25:19 +0200] "GET /MavenFinalAssignment/ HTTP/1.1" 200 52 http-bio-8080-exec-4 416
+0:0:0:0:0:0:0:1 - - [07/Aug/2020:17:25:19 +0200] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0

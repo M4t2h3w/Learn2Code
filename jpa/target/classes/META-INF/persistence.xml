@@ -1,0 +1,31 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <persistence-unit name="com.midnightnoon.learn2code.jpa" transaction-type="RESOURCE_LOCAL">
+        <class>com.midnightnoon.learn2code.model.Message</class>
+        <class>com.midnightnoon.learn2code.model.Osoba</class>
+        <class>com.midnightnoon.learn2code.model.Telefon</class>
+        <class>com.midnightnoon.learn2code.model.SkupinaKontaktov</class>
+        <class>com.midnightnoon.learn2code.model.Adresa</class>
+        <class>com.midnightnoon.learn2code.model.Film</class>
+        <class>com.midnightnoon.learn2code.model.DetailFilmu</class>
+        <class>com.midnightnoon.learn2code.model.Reziser</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/learn2code"/>
+        <property name="javax.persistence.jdbc.user" value="root"/>
+        <property name="javax.persistence.jdbc.password" value="password"/>
+
+        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+
+        <!-- Sluzi na zobrazenie a formatovanie SQL z hibernate v konzole-->
+        <property name="hibernate.show_sql" value="true"/>
+        <property name="hibernate.format_sql" value="true"/>
+        
+        <!--Automaticke create/create-drop/update/validate cez Hibernate-->
+        <!--<property name="hibernate.hbm2dll.auto" value="create"/>-->
+    </properties>
+    </persistence-unit>
+
+</persistence>

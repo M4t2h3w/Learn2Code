@@ -1,0 +1,89 @@
+<configuration>
+
+    <configurationName>mojaAplikacia</configurationName>
+
+<!--    Assignment-->
+    <appender name="ERRORSTOFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="com.midnightnoon.learn2code.filters.ErrorsFilter"/>
+        <file>errorLogs.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>errorLogs-%d{yyyy-ww}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="DEBUGSTOFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="com.midnightnoon.learn2code.filters.DebugsFilter"/>
+        <file>debugLogs.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>debugLogs-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <variable name="userName" value="Matej Novotny"/>
+
+    <appender name="ALLTOFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>allLogs.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>allLogs-%userName-%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${userName} %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <variable scope="context" name="contextPremenna" value="toto je premenna z kontextu"/>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <property resource="logbackNastavenia.properties"/>
+
+<!--    <variable name="USER_HOME" value="/Users/matej/Documents/IntelliJ Idea projects/logovanie"/>-->
+
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${USER_HOME}/logy.log</file>
+
+        <encoder>
+            <pattern>%level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${USER_HOME}/logFile.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>%d{yyyy-MM-dd,aux}logFile-%d{yyyy-MM-dd}.log</fileNamePattern>
+<!--            10 dní histórie ale maximálne 2GB dát-->
+            <maxHistory>10</maxHistory>
+            <totalSizeCap>2GB</totalSizeCap>
+
+<!--            log.%d - roll over prebehne raz denne po polnoci-->
+<!--            /logy/%d{yyyy/MM}/log.txt - roll over prebehne raz za mesiac, vytvorí sa priečinok pre každý mesiac-->
+<!--            log%d{yyyy-MM-dd_HH-mm}.log - roll over prebehne každú minútu-->
+
+        </rollingPolicy>
+        <encoder>
+            <pattern>%level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.midnightnoon.learn2code" level="DEBUG"/>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="ERRORSTOFILE"/>
+        <appender-ref ref="DEBUGSTOFILE"/>
+        <appender-ref ref="ALLTOFILE"/>
+    </root>
+
+</configuration>

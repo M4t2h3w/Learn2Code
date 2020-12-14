@@ -1,0 +1,3 @@
+DEBUG [main] c.m.l.m.Message [Message.java:31] Som v konštruktore Message Debug.
+WARN [main] c.m.l.m.Message [Message.java:32] Som v konštruktore Message Warn
+ERROR [main] c.m.l.m.Message [Message.java:33] Som v konštruktore Message Error

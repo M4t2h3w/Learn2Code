@@ -1,0 +1,3 @@
+This is just a simple text file with multiple lines.
+You can wonder why this is like it is.
+Don't worry, just you do you and go on with your life.

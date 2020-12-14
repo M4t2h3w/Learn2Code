@@ -1,0 +1,31 @@
+create table Film (
+	ID int(19) not NULL auto_increment,
+    NAZOV nvarchar(100) default NULL,
+    ZANER nvarchar(100) default NULL,
+    primary key(ID)
+);
+
+create table Detail_Filmu(
+	ID int(19) not NULL auto_increment,
+    POPIS_FILMU nvarchar(200) default NULL,
+    FILM_ID int(19) not NULL,
+    primary key(ID)
+);
+
+create table Reziser(
+	ID int(19) not NULL auto_increment,
+    PRVE_MENO nvarchar(100) default NULL,
+    DRUHE_MENO nvarchar(100) default NULL,
+    PRIEZVISKO nvarchar(100) default NULL,
+    primary key(ID)
+);
+
+create table Film_Reziser (
+	film_id int(19) not NULL,
+    reziser_id int(19) not NULL,
+    primary key(film_id, reziser_id)
+);
+
+alter table Film_Reziser add constraint fk_film_reziser_id foreign key (film_id) references Film(ID);
+alter table Film_Reziser add constraint fk_2_film_reziser_id foreign key (reziser_id) references Reziser(ID);
+alter table Detail_Filmu add constraint fk_detail_filmu_film_id foreign key(FILM_ID) references Film(ID);

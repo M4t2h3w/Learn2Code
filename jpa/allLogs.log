@@ -1,0 +1,27 @@
+DEBUG [main] c.m.l.m.Message [Message.java:31] Som v konštruktore Message Debug.
+WARN [main] c.m.l.m.Message [Message.java:32] Som v konštruktore Message Warn
+ERROR [main] c.m.l.m.Message [Message.java:33] Som v konštruktore Message Error
+ERROR [main] c.m.l.App [App.java:25] First error
+ERROR [main] c.m.l.App [App.java:26] Second error
+ERROR [main] c.m.l.App [App.java:27] Third error
+DEBUG [main] c.m.l.App [App.java:28] First debug
+DEBUG [main] c.m.l.App [App.java:29] Second debug
+DEBUG [main] c.m.l.App [App.java:30] Third debug
+%PARSER_ERROR[userName] DEBUG [main] c.m.l.m.Message [Message.java:31] Som v konštruktore Message Debug.
+%PARSER_ERROR[userName] WARN [main] c.m.l.m.Message [Message.java:32] Som v konštruktore Message Warn
+%PARSER_ERROR[userName] ERROR [main] c.m.l.m.Message [Message.java:33] Som v konštruktore Message Error
+%PARSER_ERROR[userName] ERROR [main] c.m.l.App [App.java:25] First error
+%PARSER_ERROR[userName] ERROR [main] c.m.l.App [App.java:26] Second error
+%PARSER_ERROR[userName] ERROR [main] c.m.l.App [App.java:27] Third error
+%PARSER_ERROR[userName] DEBUG [main] c.m.l.App [App.java:28] First debug
+%PARSER_ERROR[userName] DEBUG [main] c.m.l.App [App.java:29] Second debug
+%PARSER_ERROR[userName] DEBUG [main] c.m.l.App [App.java:30] Third debug
+Matej Novotny DEBUG [main] c.m.l.m.Message [Message.java:31] Som v konštruktore Message Debug.
+Matej Novotny WARN [main] c.m.l.m.Message [Message.java:32] Som v konštruktore Message Warn
+Matej Novotny ERROR [main] c.m.l.m.Message [Message.java:33] Som v konštruktore Message Error
+Matej Novotny ERROR [main] c.m.l.App [App.java:25] First error
+Matej Novotny ERROR [main] c.m.l.App [App.java:26] Second error
+Matej Novotny ERROR [main] c.m.l.App [App.java:27] Third error
+Matej Novotny DEBUG [main] c.m.l.App [App.java:28] First debug
+Matej Novotny DEBUG [main] c.m.l.App [App.java:29] Second debug
+Matej Novotny DEBUG [main] c.m.l.App [App.java:30] Third debug

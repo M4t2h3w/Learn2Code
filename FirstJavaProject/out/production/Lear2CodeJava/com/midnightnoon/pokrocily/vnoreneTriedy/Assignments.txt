@@ -1,0 +1,12 @@
+1. úloha: Napíš triedu, ktorý bude reprezentovať človeka.
+Človek okrem iného bude mať aj adresu. Adresa bude ako nový typ - teda
+vytvoríš pre ňu novú triedu. Napíš dve verzie tohto programu - prvá kde
+Adresa bude klasická trieda mimo triedy pre človeka. A druhá verzia, kde
+Adresa bude vnorená trieda v triede človek.
+
+2. úloha: Napíš si triedu, ktorá bude reprezentovať hrdinu.
+Každý hrdina má špeciálne schopnosti. Na schopnosť použi rozhranie,
+ktoré bude mať metódy (napr. pre použi schopnosť, zastav schopnosť).
+Potom napíš program, ktorý ti vytvorí dvoch hrdinov. Každý bude mať inú schopnosť.
+Danú schopnosť im priraď pomocou vnútornej anonymnej triedy. Potom zavolaj/spusti nad
+danými hrdinami ich schopnosti.

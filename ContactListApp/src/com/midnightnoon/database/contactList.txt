@@ -1,0 +1,7 @@
+Main Contact List
+4
+Name;Phone;Mobile;Email
+Fero Salaj;048/2137689;0918187456;fero@gmail.com
+Matej;876;;mmm@iou.com
+jozef;9866;8465390;jjj@gmail.sk
+John;0990784;9854950;m,andfn@lkdjfj.com

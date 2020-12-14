@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [11/Aug/2020:17:04:39 +0200] "GET /servletyDemo HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [11/Aug/2020:17:04:39 +0200] "GET /servletyDemo/ HTTP/1.1" 200 52 http-bio-8080-exec-2 31
+0:0:0:0:0:0:0:1 - - [11/Aug/2020:17:05:13 +0200] "GET /servletyDemo/simpleservlet HTTP/1.1" 200 264 http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [11/Aug/2020:17:05:14 +0200] "GET /servletyDemo/simpleservlet HTTP/1.1" 200 264 http-bio-8080-exec-3 0

@@ -1,0 +1,7 @@
+com/midnightnoon/learn2code/app/model/Film.class
+com/midnightnoon/learn2code/app/controllers/FimlyController.class
+com/midnightnoon/learn2code/app/services/FilmyService.class
+com/midnightnoon/learn2code/servlety/SimpleServlet.class
+com/midnightnoon/learn2code/filtre/FirstFilter.class
+com/midnightnoon/learn2code/filtre/CharacterSettingFilter.class
+com/midnightnoon/learn2code/app/model/dto/FilmDto.class
